@@ -1,0 +1,8 @@
+# RUN AT http://rdf.farmbio.uu.se/chembl/sparql/
+select distinct ?mol ?smiles ?inchi ?inchikey {
+  ?mol <http://purl.org/spar/cito/citesAsDataSource> ?paper ;
+    <http://www.blueobelisk.org/chemistryblogs/inchi> ?inchi ;
+    <http://www.blueobelisk.org/chemistryblogs/inchikey> ?inchikey ;
+    <http://www.blueobelisk.org/chemistryblogs/smiles> ?smiles .
+  ?paper <http://purl.org/ontology/bibo/pmid> "18610998"                 # REPLACE WITH ANY OTHER PUBMED
+}
