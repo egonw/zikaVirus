@@ -110,6 +110,7 @@ if (!missing) {
   statement = """
     CREATE
     
+    $item\tDen\t\"chemical compound\"
     $item\tP31\tQ11173\tS248\t$paperQ
     $item\tP233\t\"$smiles\"\tS248\t$paperQ
     $item\tP274\t\"$formula\"
